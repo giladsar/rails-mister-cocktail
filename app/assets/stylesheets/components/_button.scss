@@ -1,0 +1,39 @@
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 2px 11px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  color: white;
+}
+
+.btn-flat {
+  font-size: 12px;
+  color: white;
+  padding: 0px 5px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
+.btn-flat-delete {
+  font-size: 12px;
+  color: white;
+  padding: 0px 5px;
+  border-radius: 4px;
+  background: red;
+  transition: background 0.3s ease;
+}
+.back {
+  text-align: center;
+}

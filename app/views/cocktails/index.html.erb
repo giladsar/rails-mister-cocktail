@@ -1,0 +1,21 @@
+<div class="banner" style="background-image: url(https://assets.punchdrink.com/wp-content/uploads/2018/12/Article2-The-Varnish-Best-15-Cocktail-Recipe-2018-Existing-Conditions-The-Polynesian-NYC-Broken-Shaker.jpg);">
+  <div class="container">
+    <h1>After a long <strong>7</strong> weeks of <strong>coding</strong>!</h1>
+    <p>it's time to crack a cold beer and have a cocktail.</p>
+    <%= link_to 'Create a Cocktail', new_cocktail_path,class: "btn btn-ghost"  %>
+  </div>
+</div>
+
+
+<div class="cards-container">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-product">
+      <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+
+      <div class="card-product-infos">
+        <h2><%=link_to cocktail.name, cocktail_path(cocktail) %></h2>
+      </div>
+    </div>
+  <% end %>
+</div>
+

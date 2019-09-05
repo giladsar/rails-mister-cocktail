@@ -31,11 +31,15 @@ gem 'jbuilder', '~> 2.5'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'cloudinary', '~> 1.9.1'
+gem 'carrierwave', '~> 1.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
